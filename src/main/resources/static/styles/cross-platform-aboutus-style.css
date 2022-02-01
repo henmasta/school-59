@@ -1,0 +1,36 @@
+@media(max-device-width: 640px) {
+
+.header_area {
+	height: 7.5vh;
+}
+
+.btn1 {
+	font-size: 45px;
+}
+
+.header_logo {
+	font-size: 60px;
+}
+
+.nav {
+	font-size: 30px;
+}
+
+
+.dws-menu > ul li a{
+	padding-top: 30px;
+    font-size: 28px;
+}
+
+.footer_social_content img{
+    width: 75px;
+    height: 75px;
+}
+
+
+
+#margin {
+	height: 150px;
+}
+
+}
