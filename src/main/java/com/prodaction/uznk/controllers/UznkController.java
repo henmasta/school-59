@@ -50,7 +50,7 @@ public class UznkController {
 		return "Русский_язык/7-класс";
 	}
 
-	@GetMapping("/items/Физика")
+	@GetMapping("/items/Физика_7-класс")
 	public String Physics7(Model model) {
 		model.addAttribute("title", "Physics");
 		return "Физика/Physics_7";
