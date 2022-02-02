@@ -25,4 +25,10 @@ public class UznkController {
 		model.addAttribute("title", "abouts");
 		return "aboutus";
 	}
+
+	@GetMapping("/items")
+	public String items(Model model) {
+		model.addAttribute("title", "items");
+		return "предметы";
+	}
 }
