@@ -33,25 +33,25 @@ public class UznkController {
 	}
 
 	@GetMapping("/items/Русский_язык_5-класс")
-	public String RussianLanguage(Model model) {
+	public String RussianLanguage5(Model model) {
 		model.addAttribute("title", "Russian_Language");
 		return "Русский_язык/5-класс";
 	}
 
 	@GetMapping("/items/Русский_язык_6-класс")
-	public String RussianLanguage(Model model) {
+	public String RussianLanguage6(Model model) {
 		model.addAttribute("title", "Russian_Language");
 		return "Русский_язык/6-класс";
 	}
 
 	@GetMapping("/items/Русский_язык_7-класс")
-	public String RussianLanguage(Model model) {
+	public String RussianLanguage7(Model model) {
 		model.addAttribute("title", "Russian_Language");
 		return "Русский_язык/7-класс";
 	}
 
 	@GetMapping("/items/Физика")
-	public String Physics(Model model) {
+	public String Physics7(Model model) {
 		model.addAttribute("title", "Physics");
 		return "Физика/Physics_7";
 	}
