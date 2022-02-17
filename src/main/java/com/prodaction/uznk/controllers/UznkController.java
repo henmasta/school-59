@@ -51,7 +51,7 @@ public class UznkController {
 	}
 
 	@GetMapping("/items/Русский_язык_8-класс")
-	public String RussianLanguage7(Model model) {
+	public String RussianLanguage8(Model model) {
 		model.addAttribute("title", "Russian_Language");
 		return "Русский_язык/8-класс";
 	}
