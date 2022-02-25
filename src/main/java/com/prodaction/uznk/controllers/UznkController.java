@@ -14,6 +14,12 @@ public class UznkController {
 		return "index";
 	}
 
+	@GetMapping("/error")
+	public String error(Model model) {
+		model.addAttribute("title", "Oops");
+		return "404";
+	}	
+
 	@GetMapping("/contact")
 	public String contact(Model model) {
 		model.addAttribute("name", "hey");
@@ -30,6 +36,12 @@ public class UznkController {
 	public String items(Model model) {
 		model.addAttribute("title", "items");
 		return "предметы";
+	}
+
+	@GetMapping("/login")
+	public String login(Model model) {
+		model.addAttribute("title", "login")
+		return "login"
 	}
 
 	@GetMapping("/items/Русский_язык_5-класс")
