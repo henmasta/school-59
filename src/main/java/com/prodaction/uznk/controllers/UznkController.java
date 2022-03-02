@@ -18,7 +18,7 @@ public class UznkController {
 	public String error(Model model) {
 		model.addAttribute("title", "Oops");
 		return "404";
-	}	
+	}
 
 	@GetMapping("/contact")
 	public String contact(Model model) {
@@ -36,6 +36,12 @@ public class UznkController {
 	public String items(Model model) {
 		model.addAttribute("title", "items");
 		return "предметы";
+	}
+
+	@GetMapping("/vacancy")
+	public String vacancy(Model model) {
+		model.addAttribute("title", "vacancy");
+		return "vacancy";
 	}
 
 	@GetMapping("/login")
