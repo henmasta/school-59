@@ -50,6 +50,12 @@ public class UznkController {
 		return "vacancy_place";
 	}
 
+	@GetMapping("/documents")
+	public String documents(Model model) {
+		model.addAttribute("title", "documents");
+		return "documents";
+	}
+
 	@GetMapping("/login")
 	public String login(Model model) {
 		model.addAttribute("title", "login");
