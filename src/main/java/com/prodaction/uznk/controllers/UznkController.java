@@ -44,6 +44,12 @@ public class UznkController {
 		return "vacancy";
 	}
 
+	@GetMapping("/vacancy_place")
+	public String vacancy_place(Model model) {
+		model.addAttribute("title", "vacancy_place");
+		return "vacancy_place";
+	}
+
 	@GetMapping("/login")
 	public String login(Model model) {
 		model.addAttribute("title", "login");
