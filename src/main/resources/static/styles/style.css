@@ -414,11 +414,6 @@ h1,h1,h3,h4,h5,h6{
     height: auto;
 }
 
-.blog__photo:hover {
-    -webkit-transform: scale(1.2);
-    -ms-transform: scale(1.2);
-    transform: scale(1.2);
-}
 
 .blog__date {
     padding: 10px 20px;
