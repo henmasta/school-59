@@ -110,9 +110,3 @@ a::after {
 .errorcode {
   color: white;
 }
-
-@media(max-device-width: 640px) {
-  body {
-    font-size: 200px;
-  }
-}

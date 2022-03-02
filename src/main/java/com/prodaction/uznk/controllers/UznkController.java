@@ -56,6 +56,13 @@ public class UznkController {
 		return "documents";
 	}
 
+	@GetMapping("/education")
+	public String education(Model model) {
+		model.addAttribute("title", "education");
+		return "education";
+	}
+
+
 	@GetMapping("/login")
 	public String login(Model model) {
 		model.addAttribute("title", "login");
