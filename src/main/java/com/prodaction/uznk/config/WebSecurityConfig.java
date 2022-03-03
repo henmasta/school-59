@@ -1,6 +1,6 @@
 package com.prodaction.uznk.config;
 
-import org.o7planning.sbsecurity.service.UserDetailsServiceImpl;
+import com.prodaction.uznk.service.UserDetailsServiceImpl;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
