@@ -30,7 +30,7 @@ public class UznkController {
 	public String abouts(Model model) {
 		model.addAttribute("title", "abouts");
 		return "aboutus";
-	}
+	} 
 
 	@GetMapping("/items")
 	public String items(Model model) {
