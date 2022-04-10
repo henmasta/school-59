@@ -28,8 +28,8 @@ public class UznkController {
 
 	@GetMapping("/abouts")
 	public String abouts(Model model) {
-		model.addAttribute("title", "abouts");
-		return "about";
+		model.addAttribute("title", "about");
+		return "vacancy";
 	} 
 
 	@GetMapping("/items")
