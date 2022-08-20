@@ -66,7 +66,7 @@ public class UznkController {
 	@GetMapping("/login")
 	public String login(Model model) {
 		model.addAttribute("title", "login");
-		return "login";
+		return "login/login";
 	}
 
 	@GetMapping("/items/Русский_язык_5-класс")

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
 <head>
     <meta charset="UTF-8">
     <link rel="shortcut icon" href="img/icon.ico" type="image/x-icon">
@@ -31,7 +31,10 @@
                 <div class="intro_inner">
                     <h2 class="intro_suptitle">ВЫ УЗНАЕТЕ ВСЁ</h2>
                     <h1 class="intro_title">УЗНАЙКААА</h1>
-                    <a class="btn" href="aboutus.html">Узнать больше о нас</a>
+                    <a class="btn" href="abouts">Узнать больше о нас</a>
+                    <br>
+                    <br>
+                    <a class="btn" href="/login">Вход</a>
                 </div>
             </div>
         </div>
@@ -77,13 +80,13 @@
                 
                     <div class="blog__item element-show">
                         <div class="blog__header">
-                            <a href="aboutus.html">
+                            <a href="abouts">
                                 <img class="blog__photo" src="img/прил.jpg" alt="">
                             </a>
                         </div>
                         <div class="blog__content">
                             <div class="blog__title">
-                                <a href="aboutus.html">О нас</a>
+                                <a href="abouts">О нас</a>
                             </div>
                             <div class="blog__text">В этом разделе вы сможете узнать что это за проект и что он включает!!!</div>
                         </div>
@@ -99,13 +102,13 @@
 
                     <div class="blog__item element-show" id="subjects">
                         <div class="blog__header">
-                            <a href="предметы.html">
+                            <a href="items">
                                 <img class="blog__photo" src="img/133.jpg" alt="">
                             </a>
                         </div>
                         <div class="blog__content">
                             <div class="blog__title">
-                                <a href="предметы.html">Предметы</a>
+                                <a href="items">Предметы</a>
                             </div>
                             <div class="blog__text">В этом разделе вы сможете выбрать предмет и класс в котором вы находитесь и найти определения или правила
                                 которые помогут в изучении этого предмета.</div>
@@ -122,14 +125,14 @@
 
                     <div class="blog__item element-show" id="contacts">
                         <div class="blog__header">
-                            <a href="contact.html">
+                            <a href="contact">
                                 <img class="blog__photo" src="img/кон.jpg" alt="">
                             </a>
 
                         </div>
                         <div class="blog__content">
                             <div class="blog__title">
-                                <a href="contact.html">Контакты</a>
+                                <a href="contact">Контакты</a>
                             </div>
                             <div class="blog__text">Контакты для связи при обнаружении ошибки или предложения для улучшения сайта!</div>
                         </div>
@@ -159,30 +162,8 @@
             </div>
         </div>
     <hr>
-<footer class="footer">
-    <div class="container">
-        <div class="footer_inner">
-            <div class="footer_col">
-                <div class="footer_logo">УЗНАЙКААА</div>
-                <div class="footer_text"> Узнайкаа был создан при поддержке МОУ "Средняя школа №59 города Макеевка".</div>
-                <div class="footer_social">
-                    <div class="footer_social_header"><b>ВЫ</b> узнаете все!!!
-                    </div>
-                    <div class="footer_social_content">
-                        Наши контакты:
-                        <a href="contact.html" target="_blank"><img src="img/461-4619554_old-telephone-png.png">
-                        </a>
-                        <a href="contact.html" target="_blank"><img src="img/ВКонтакте.png">
-                        </a>
-                        <a href="contact.html"  target="_blank"><img src="img/mail.png">
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</footer>
-<center>2022 УЗНАЙКААА</center>
+<th:block th:include="/_footer"></th:block>
+
 </body>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 

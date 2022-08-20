@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ru" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <link rel="shortcut icon" href="img/icon.ico" type="image/x-icon">
+    <title>О НАС</title>
+    <link rel="stylesheet" type="text/css" href="styles/style.css">
+    <link rel="stylesheet" type="text/css" href="styles/footer-contacts.css">
+    <link rel="stylesheet" type="text/css" href="styles/cross-platform-aboutus-style.css">
+</head>
+<body>
+    <th:block th:include="/_menu"></th:block>
+<div>
+    <div id = "margin"></div>
+    <div class="container1">
+        <div class="about1" style = "font-size: 50px;">Общая информация</div>
+
+        <hr>
+        <center><div class="about2">Разделы, с которыми Вы можете ознакомиться</div></center>
+        <div class="text3">
+            <center> <a class="btn1" href="/vacancy">Вакансии</a></center>
+            <center> <a class="btn1" href="/documents">Документы</a></center>
+            <center> <a class="btn1" href="/education">Образование</a></center>
+            <center> <a class="btn1" href="/vacancy_place">Вакантные места</a></center>
+            <center> <a class="btn1" href="#">Основные сведения</a></center>
+            <center> <a class="btn1" href="#">Структура и органы ОО</a></center>
+            <center> <a class="btn1" href="material.html">Материально-техническое обеспечение</a></center>
+        </div>
+    </div>
+</body>
+<th:block th:include="/_footer"></th:block>
+</html>

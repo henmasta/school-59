@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
 <head>
     <meta charset="UTF-8">
     <link rel="shortcut icon" href="img/icon.ico" type="image/x-icon">
@@ -9,27 +9,7 @@
     <link rel="stylesheet" type="text/css" href="styles/cross-platform-subjects-style.css">
 </head>
 <body>
-<div class="header_area">
-    <div class="conteiner">
-        <header class="header">
-            <div class="container">
-                <div class="header_inner">
-                    <a class="nav_link_logo" href="/"> <div class="header_logo">УЗНАЙКААА</div></a>
-                    <nav class="nav">
-                        <nav class="dws-menu">
-                            <ul>
-                                <li><a href="abouts"><i class="fa fa-shopping-cart"></i>О нас</a></li>
-                                <li><a href="items"><i class="fa fa-cogs"></i>Предметы</a></li>
-
-                                <li><a href="contact"><i class="fa fa-envelope-open"></i>Контакты</a></li>
-                            </ul>
-                        </nav>
-                    </nav>
-                </div>
-            </div>
-        </header>
-    </div>
-</div>
+<th:block th:include="/_menu"></th:block>
 <div id = "table">
 <table>
     <tr>
@@ -64,7 +44,7 @@
         <td class="td">✓</td>
     </tr>
     <tr>
-        <td>Физика</td>
+        <td><a href="https://t.me/addstickers/Irina_Gurova" id="gurova" style="color:white; cursor: text;">Физика</a></td>
         <td></td>
         <td></td>
         <td class="td"><a href = "items/Физика_7-класс">✓</a></td>
@@ -89,10 +69,10 @@
         <td class="td"><a href="items/Русский_язык_5-класс">✓</a></td>
         <td class="td"><a href="items/Русский_язык_6-класс">✓</a></td>
         <td class="td"><a href="items/Русский_язык_7-класс">✓</a></td>
-        <td class="td"><a href="Русский%20язык/8%20класс.html">✓</a></td>
-        <td class="td"><a href="Русский%20язык/9%20класс.html">✓</a></td>
-        <td class="td"><a href="Русский%20язык/10%20класс.html">✓</a></td>
-        <td class="td"><a href="Русский%20язык/11%20класс.html">✓</a></td>
+        <td class="td"><a href="items/Русский_язык_8-класс">✓</a></td>
+        <td class="td"><a href="items/Русский_язык_9-класс">✓</a></td>
+        <td class="td"><a href="items/Русский_язык_10-класс">✓</a></td>
+        <td class="td"><a href="items/Русский_язык_11-класс">✓</a></td>
     </tr>
     <tr>
         <td>Литература</td>
@@ -146,39 +126,6 @@
         <td class="td">✓</td>
     </tr>
     <tr>
-        <td>Общество</td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td class="td">✓</td>
-        <td class="td">✓</td>
-        <td class="td">✓</td>
-        <td class="td">✓</td>
-
-    </tr>
-    <tr>
-        <td>Экономика</td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td class="td">✓</td>
-        <td class="td">✓</td>
-
-    </tr>
-    <tr>
-        <td>ОБЖ</td>
-        <td class="td">✓</td>
-        <td class="td">✓</td>
-        <td class="td">✓</td>
-        <td class="td">✓</td>
-        <td class="td">✓</td>
-        <td class="td">✓</td>
-        <td class="td">✓</td>
-
-    </tr>
-    <tr>
         <td>Физ-ра</td>
         <td class="td">✓</td>
         <td class="td">✓</td>
@@ -202,29 +149,6 @@
     </tr>
 </table>
 </div>
-<footer class="footer">
-    <div class="container">
-        <div class="footer_inner">
-            <div class="footer_col">
-                <div class="footer_logo">УЗНАЙКААА</div>
-                <div class="footer_text">Узнайкаа был создан при поддержке МОУ "Средняя школа №59 города Макеевка"</div>
-                <div class="footer_social">
-                    <div class="footer_social_header"><b>ВЫ</b> узнаете все!!!
-                    </div>
-                    <div class="footer_social_content">
-                        Наши контакты:
-                        <a href="contact.html" target="_blank"><img src="img/461-4619554_old-telephone-png.png">
-                        </a>
-                        <a href="contact.html" target="_blank"><img src="img/ВКонтакте.png">
-                        </a>
-                        <a href="contact.html"  target="_blank"><img src="img/mail.png">
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</footer>
-<center>2022 УЗНАЙКААА</center>
-</body>
+<th:block th:include="/_footer"></th:block>
+
 </body>

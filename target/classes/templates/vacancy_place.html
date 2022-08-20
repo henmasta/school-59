@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
 <head>
 	<meta charset="UTF-8">
     <link rel="shortcut icon" href="img/icon.ico" type="image/x-icon">
@@ -7,27 +7,7 @@
     <link rel="stylesheet" href="styles/style.css">
 </head>
 <body>
-	<div class="header_area">
-    <div class="conteiner">
-        <header class="header">
-            <div class="container">
-                <div class="header_inner">
-                    <a class="nav_link_logo" href="/"> <div class="header_logo">УЗНАЙКААА</div></a>
-                    <nav class="nav">
-                        <nav class="dws-menu">
-                            <ul>
-                                <li><a href="abouts"><i class="fa fa-shopping-cart"></i>О нас</a></li>
-                                <li><a href="items"><i class="fa fa-cogs"></i>Предметы</a></li>
-
-                                <li><a href="contact"><i class="fa fa-envelope-open"></i>Контакты</a></li>
-                            </ul>
-                        </nav>
-                    </nav>
-                </div>
-            </div>
-        </header>
-    </div>
-</div>
+	<th:block th:include="/_menu"></th:block>
 </body>
 
 
@@ -201,29 +181,6 @@
 	</tbody>
 </table>
 
-<footer class="footer1">
-    <div class="container">
-        <div class="footer_inner">
-            <div class="footer_col">
-                <div class="footer_logo">УЗНАЙКААА</div>
-                <div class="footer_text">Сайт представляет из себя ознакомительную страницу с школой №59</div>
-                <div class="footer_social">
-                    <div class="footer_social_header">
-                        <b>ВЫ</b> останетесь довольны!
-                    </div>
-                    <div class="footer_social_content">
-                        Наши контакты:
-                        <a href="contact.html" target="_blank"><img src="img/461-4619554_old-telephone-png.png">
-                        </a>
-                        <a href="contact.html" target="_blank"><img src="img/ВКонтакте.png">
-                        </a>
-                        <a href="contact.html"  target="_blank"><img src="img/mail.png">
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</footer>
-<center>2022 УЗНАЙКААА</center>
+<th:block th:include="/_footer"></th:block>
+
 </html>
